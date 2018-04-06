@@ -1,0 +1,19 @@
+{
+  "name": "cat-food",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nbarinov/cat-food.git"
+  },
+  "author": "Nikita Barinov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nbarinov/cat-food/issues"
+  },
+  "homepage": "https://github.com/nbarinov/cat-food#readme"
+}
