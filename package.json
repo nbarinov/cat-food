@@ -15,5 +15,13 @@
   "bugs": {
     "url": "https://github.com/nbarinov/cat-food/issues"
   },
-  "homepage": "https://github.com/nbarinov/cat-food#readme"
+  "homepage": "https://github.com/nbarinov/cat-food#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.9.3",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-uglifyjs": "^0.6.2"
+  }
 }
