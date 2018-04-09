@@ -10,7 +10,86 @@
     @include visually-hidden();
 }
 
-.food-form__label {}
+// hover, focus, checked, disabled
+
+.food-form__checkbox:focus + .food-form__label,
+.food-form__checkbox:focus + .food-form__label .food-form__weight {
+    background-color: $blue-light;
+}
+
+.food-form__checkbox:checked + .food-form__label,
+.food-form__checkbox:checked + .food-form__label .food-form__weight {
+    background-color: $pink;
+}
+
+.food-form__checkbox:checked:hover + .food-form__label,
+.food-form__checkbox:checked:hover + .food-form__label .food-form__weight,
+.food-form__checkbox:checked:focus + .food-form__label,
+.food-form__checkbox:checked:focus + .food-form__label .food-form__weight {
+    background-color: $pink-light;
+}
+
+.food-form__checkbox:disabled + .food-form__label,
+.food-form__checkbox:disabled + .food-form__label .food-form__weight {
+    background-color: $gray;
+}
+
+.food-form__checkbox:disabled + .food-form__label::before {
+    opacity: 0.5;
+}
+
+.food-form__checkbox:disabled + .food-form__label .food-form__phrase,
+.food-form__checkbox:disabled + .food-form__label .food-form__title {
+    color: $gray;
+}
+
+.food-form__checkbox:checked ~ .food-form__call .food-form__call-default {
+    opacity: 0;
+    @include visually-hidden();
+}
+
+.food-form__checkbox:checked ~ .food-form__call .food-form__call-selected {
+    position: static;
+    clip: auto;
+    width: auto;
+    height: auto;
+    margin: 0;
+    opacity: 1;
+}
+
+.food-form__checkbox:checked:hover + .food-form__label .food-form__phrase-default {
+    opacity: 0;
+    @include visually-hidden();
+}
+
+.food-form__checkbox:checked:hover + .food-form__label .food-form__phrase-hover {
+    position: static;
+    clip: auto;
+    width: auto;
+    height: auto;
+    margin: 0;
+    opacity: 1;
+}
+
+.food-form__checkbox:disabled ~ .food-form__call .food-form__call-default {
+    opacity: 0;
+    @include visually-hidden();
+}
+
+.food-form__checkbox:disabled ~ .food-form__call .food-form__call-disabled {
+    position: static;
+    clip: auto;
+    width: auto;
+    height: auto;
+    margin: 0;
+    opacity: 1;
+}
+
+// end hover, focus, checked, disabled
+
+.food-form__label {
+    cursor: pointer;
+}
 
 .food-form__call {
     margin-top: 14px;
@@ -32,4 +111,27 @@
     font-weight: bold;
     color: $blue;
     text-decoration: none;
+}
+
+.food-form__call-default,
+.food-form__call-selected,
+.food-form__call-disabled {
+    // transition: opacity 280ms ease;
+}
+
+.food-form__phrase-default,
+.food-form__call-default {
+    opacity: 1;
+    visibility: visible;
+}
+
+.food-form__phrase-hover,
+.food-form__call-selected,
+.food-form__call-disabled {
+    opacity: 0;
+    @include visually-hidden();
+}
+
+.food-form__call-disabled {
+    color: $yellow;
 }

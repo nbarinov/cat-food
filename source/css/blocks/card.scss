@@ -19,6 +19,8 @@
 
     -webkit-clip-path: polygon(13.125% 0, 100% 0, 100% 100%, 0 100%, 0 9.166%);
     clip-path: polygon(13.125% 0, 100% 0, 100% 100%, 0 100%, 0 9.166%);
+
+    transition: background-color 280ms ease;
 }
 
 .card::before {
@@ -45,6 +47,13 @@
     clip-path: polygon(13.125% 0, 100% 0, 100% 100%, 0 100%, 0 9.166%);
 }
 
+.card:hover,
+.card:focus,
+.card:hover .card__weight,
+.card:focus .card__weight {
+    background-color: $blue-light;
+}
+
 .card__header {}
 
 .card__phrase {
@@ -52,7 +61,7 @@
 
     font-family: TrebuchetMS, sans-serif;
     font-size: 16px;
-    color: $dark-gray;
+    color: $gray-dark;
     letter-spacing: 0;
 }
 
@@ -90,6 +99,8 @@
     letter-spacing: 0;
     text-align: center;
     line-height: 22px;
+
+    transition: background-color 280ms ease;
 }
 
 .card__weight span {
