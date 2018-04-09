@@ -1,0 +1,35 @@
+.food-form {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.food-form__field {}
+
+.food-form__checkbox {
+    @include visually-hidden();
+}
+
+.food-form__label {}
+
+.food-form__call {
+    margin-top: 14px;
+
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 13px;
+    letter-spacing: 0;
+    color: #fff;
+}
+
+.food-form__call--center {
+    display: block;
+    text-align: center;
+}
+
+.food-form__call a {
+    border-bottom: 1px dashed $blue;
+
+    font-weight: bold;
+    color: $blue;
+    text-decoration: none;
+}
