@@ -54,7 +54,7 @@ gulp.task('js', () =>
 
 gulp.task('fonts', () => 
     gulp.src(paths.fonts)
-        .pipe(gulp.dest(paths.baseDir + '/fonst'))
+        .pipe(gulp.dest(paths.baseDir + '/fonts'))
         .pipe(reload({ stream: true }))
 );
 
