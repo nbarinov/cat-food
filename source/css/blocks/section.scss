@@ -1,0 +1,27 @@
+.section {
+    width: 100%;
+    max-width: $max-width;
+}
+
+.section--center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.section__header {
+    margin-top: 48px;
+}
+
+.section__title {
+    font-family: $font;
+    font-size: 36px;
+    color: #fff;
+    text-shadow: 0 1px 1px #000;
+}
+
+.section__title--center {
+    display: block;
+    text-align: center;
+}
