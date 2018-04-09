@@ -1,5 +1,27 @@
+@import "_variables";
+@import "_mixins";
+@import "fonts";
+
+@import "blocks/section";
+@import "blocks/cat-food";
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-image: url('../images/Pattern.png');
+    background-repeat: repeat;
+}
+
+@media (min-width: 768px) {
+    body {
+        background-image: url('../images/Pattern@2x.png');
+    }
 }

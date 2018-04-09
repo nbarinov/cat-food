@@ -1,0 +1,90 @@
+.cat-food {}
+
+.cat-food__form {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    margin-top: 24px;
+}
+
+.cat-food__field {}
+
+.cat-food__checkbox {
+    @include visually-hidden();
+}
+
+.cat-food__label {
+    display: block;
+
+    position: relative;
+
+    width: 320px;
+    height: 480px;
+
+    padding-top: 21px;
+    padding-left: 51px;
+
+    // border-width: 4px;
+    // border-style: solid;
+    // border-color: $blue;
+    border-radius: 12px;
+
+    background-color: $blue;
+
+    -webkit-clip-path: polygon(13.125% 0, 100% 0, 100% 100%, 0 100%, 0 9.166%);
+    clip-path: polygon(13.125% 0, 100% 0, 100% 100%, 0 100%, 0 9.166%);
+}
+
+.cat-food__label::before {
+    display: block;
+    content: '';
+
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    z-index: -1;
+
+    width: 312px;
+    height: 472px;
+
+    border-radius: 8px;
+
+    background-color: #F2F2F2;
+
+    -webkit-clip-path: polygon(13.125% 0, 100% 0, 100% 100%, 0 100%, 0 9.166%);
+    clip-path: polygon(13.125% 0, 100% 0, 100% 100%, 0 100%, 0 9.166%);
+}
+
+.cat-food__checkbox:checked + .cat-food__label {
+    border: 5px solid pink;
+}
+
+.cat-food__content {
+    // position: absolute;
+    top: 21px;
+    left: 51px;
+    z-index: 2;
+
+}
+
+.cat-food__call {
+    margin-top: 14px;
+
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 13px;
+    color: #fff;
+}
+
+.cat-food__call--center {
+    display: block;
+    text-align: center;
+}
+
+.cat-food__call a {
+    border-bottom: 1px dashed $blue;
+
+    font-weight: bold;
+    color: $blue;
+    text-decoration: none;
+}
