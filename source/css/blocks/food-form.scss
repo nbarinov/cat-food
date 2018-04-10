@@ -22,10 +22,10 @@
     background-color: $pink;
 }
 
-.food-form__checkbox:checked:hover + .food-form__label,
-.food-form__checkbox:checked:hover + .food-form__label .food-form__weight,
-.food-form__checkbox:checked:focus + .food-form__label,
-.food-form__checkbox:checked:focus + .food-form__label .food-form__weight {
+.food-form__checkbox:checked:hover + .food-form__label:not(.food-form__label--not-switch-phrase),
+.food-form__checkbox:checked:hover + .food-form__label:not(.food-form__label--not-switch-phrase) .food-form__weight,
+.food-form__checkbox:checked:focus + .food-form__label:not(.food-form__label--not-switch-phrase),
+.food-form__checkbox:checked:focus + .food-form__label:not(.food-form__label--not-switch-phrase) .food-form__weight {
     background-color: $pink-light;
 }
 
@@ -57,12 +57,12 @@
     opacity: 1;
 }
 
-.food-form__checkbox:checked:hover + .food-form__label .food-form__phrase-default {
+.food-form__checkbox:checked:hover + .food-form__label:not(.food-form__label--not-switch-phrase) .food-form__phrase-default {
     opacity: 0;
     @include visually-hidden();
 }
 
-.food-form__checkbox:checked:hover + .food-form__label .food-form__phrase-hover {
+.food-form__checkbox:checked:hover + .food-form__label:not(.food-form__label--not-switch-phrase) .food-form__phrase-hover {
     position: static;
     clip: auto;
     width: auto;
@@ -105,18 +105,14 @@
     text-align: center;
 }
 
-.food-form__call a {
+.food-form__call label {
     border-bottom: 1px dashed $blue;
 
     font-weight: bold;
     color: $blue;
     text-decoration: none;
-}
 
-.food-form__call-default,
-.food-form__call-selected,
-.food-form__call-disabled {
-    // transition: opacity 280ms ease;
+    cursor: pointer;
 }
 
 .food-form__phrase-default,
