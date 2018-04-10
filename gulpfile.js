@@ -1,5 +1,7 @@
 const gulp = require('gulp'),
     sass = require('gulp-sass'),
+    sourcemaps = require('gulp-sourcemaps'),
+    babel = require('gulp-babel'),
     uglifyjs = require('gulp-uglifyjs'),
     cleanCSS = require('gulp-clean-css'),
     rename = require('gulp-rename'),
@@ -45,8 +47,13 @@ gulp.task('css', () =>
 
 gulp.task('js', () =>
     gulp.src(paths.js)
+        .pipe(sourcemaps.init())
+        .pipe(babel({
+            presets: ['env', 'stage-0']
+        }))
         .pipe(uglifyjs())
         .pipe(concat('bundle.js'))
+        .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest(paths.baseDir + '/js'))
         .pipe(notify('JS saved'))
         .pipe(reload({ stream: true }))
