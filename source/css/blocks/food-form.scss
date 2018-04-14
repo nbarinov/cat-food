@@ -37,7 +37,7 @@
 }
 
 .food-form__checkbox:disabled + .food-form__label,
-.food-form__checkbox:disabled + .food-form__label .food-form__weight {
+.food-form__checkbox:disabled + .food-form__label .food-form__weight, {
     background-color: $gray;
 }
 
@@ -46,7 +46,8 @@
 }
 
 .food-form__checkbox:disabled + .food-form__label .food-form__phrase,
-.food-form__checkbox:disabled + .food-form__label .food-form__title {
+.food-form__checkbox:disabled + .food-form__label .food-form__title,
+.food-form__checkbox:disabled + .food-form__label .food-form__desc {
     color: $gray;
 }
 

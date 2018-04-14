@@ -84,10 +84,11 @@
 }
 
 .card__desc {
-    padding-left: 2px;
+    padding-left: 3px;
     
     font-family: TrebuchetMS;
     font-size: 14px;
+    font-weight: 200;
     color: $gray-dark;
     letter-spacing: 0;
     line-height: 16px;
@@ -103,7 +104,7 @@
 
     width: 80px;
     height: 80px;
-    padding-top: 21px;
+    padding-top: 20px;
 
     border-radius: 50%;
 
