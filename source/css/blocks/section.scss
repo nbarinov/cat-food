@@ -1,13 +1,7 @@
 .section {
     width: 100%;
     max-width: $max-width;
-}
-
-.section--center {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin: 0 auto;
 }
 
 .section__header {
@@ -25,4 +19,27 @@
 .section__title--center {
     display: block;
     text-align: center;
+}
+
+@media (min-width: 375px) {
+    .section {
+        padding-right: 8px;
+        padding-left: 8px;
+    }
+}
+
+@media (min-width: $max-width) {
+    .section {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+@media (min-width: $max-width) and (min-height: 625px) {
+    .section--center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
