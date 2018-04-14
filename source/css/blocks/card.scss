@@ -57,7 +57,8 @@
 .card__header {}
 
 .card__phrase {
-    margin-bottom: 15px;
+    margin-bottom: 17px;
+    padding-left: 3px;
 
     font-family: TrebuchetMS, sans-serif;
     font-size: 16px;
@@ -66,15 +67,30 @@
 }
 
 .card__title {
-    font-family: TrebuchetMS-Bold, sans-serif;
+    margin-bottom: 20px;
+
+    font-family: TrebuchetMS, sans-serif;
     font-size: 48px;
+    font-weight: bold;
     color: #000000;
     letter-spacing: 0;
     line-height: 0.7;
+    font-stretch: condensed;
 }
 
 .card__title span {
     font-size: 24px;
+    padding-left: 3px;
+}
+
+.card__desc {
+    padding-left: 2px;
+    
+    font-family: TrebuchetMS;
+    font-size: 14px;
+    color: $gray-dark;
+    letter-spacing: 0;
+    line-height: 16px;
 }
 
 .card__footer {
