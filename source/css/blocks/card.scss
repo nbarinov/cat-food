@@ -17,8 +17,8 @@
 
     background-color: $blue;
 
-    -webkit-clip-path: polygon(13.125% 0, 100% 0, 100% 100%, 0 100%, 0 9.166%);
-    clip-path: polygon(13.125% 0, 100% 0, 100% 100%, 0 100%, 0 9.166%);
+    -webkit-clip-path: polygon(13.4% 0, 100% 0, 100% 100%, 0 100%, 0 9%);
+    clip-path: polygon(13.4% 0, 100% 0, 100% 100%, 0 100%, 0 9%);
 
     transition: background-color 280ms ease;
 }
@@ -43,8 +43,8 @@
     background-repeat: no-repeat;
     background-size: 368px 360px;
 
-    -webkit-clip-path: polygon(13.125% 0, 100% 0, 100% 100%, 0 100%, 0 9.166%);
-    clip-path: polygon(13.125% 0, 100% 0, 100% 100%, 0 100%, 0 9.166%);
+    -webkit-clip-path: polygon(13.125% 0, 100% 0, 100% 100%, 0 100%, 0 8.75%);
+    clip-path: polygon(13.125% 0, 100% 0, 100% 100%, 0 100%, 0 8.75%);
 }
 
 .card:hover,
