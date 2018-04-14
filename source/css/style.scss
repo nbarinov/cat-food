@@ -20,7 +20,7 @@ html {
 body {
     height: 100vh;
     background-image: url('../images/Pattern.png');
-    background-image: url('../images/Pattern.png'), linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%,rgba(255, 255, 255, 0) 50%,rgba(0, 0, 0, 0.5) 100%);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%,rgba(0, 0, 0, 0) 50%,rgba(0, 0, 0, 0.5) 100%), url('../images/Pattern.png');
     background-repeat: repeat;
     background-size: 100%;
     background-position: top left;
@@ -29,6 +29,6 @@ body {
 @media (min-width: 768px) {
     body {
         background-image: url('../images/Pattern@2x.png');
-        background-image: url('../images/Pattern@2x.png'), linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%,rgba(255, 255, 255, 0) 50%,rgba(0, 0, 0, 0.5) 100%);
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%,rgba(0, 0, 0, 0) 50%,rgba(0, 0, 0, 0.5) 100%), url('../images/Pattern@2x.png');
     }
 }
