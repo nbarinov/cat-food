@@ -8,6 +8,10 @@
     margin-bottom: 2em;
 }
 
+.food-form__field--w-320 {
+    max-width: $card-width;
+}
+
 .food-form__field:last-child {
     margin-bottom: 0;
 }
@@ -100,6 +104,8 @@
 
 .food-form__call {
     margin-top: 14px;
+    padding-right: 4px;
+    padding-left: 4px;
 
     font-family: 'Trebuchet MS', sans-serif;
     font-size: 13px;
